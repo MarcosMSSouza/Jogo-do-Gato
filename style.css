@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.div-title {
+  padding-bottom: 0%;
+}
+.title {
+  font-size: 100px;
+  color: rgb(216, 240, 7);
+}
+
+.container {
+  width: 80%;
+  max-width: 650px;
+  height: 70vh;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: solid blue;
+
+  margin: auto;
+  margin-top: 5%;
+
+  box-shadow: 10px 9px 24px 2px rgba(243, 235, 235, 0.76);
+  -webkit-box-shadow: 10px 9px 24px 2px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 10px 9px 24px 2px rgba(236, 227, 227, 0.76);
+}
+
+.modal--rules {
+  border: solid blue;
+}
+.h1-rules {
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: inline-block;
+  width: 30rem;
+  margin: 0 1rem;
+  font-size: 50px;
+  /* border-top: 0.2rem solid black; */
+  /* border: solid; */
+}
+
+body {
+  background-color: rgb(105, 24, 105);
+}
+
+.btn {
+  width: 70%;
+  height: 50px;
+  border: none;
+  background-color: rgb(105, 24, 105);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.div-btn--rules {
+  position: relative;
+  border: solid crimson;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-end;
+
+  bottom: -4em;
+}
+
+/* #btn--rules {
+  color: #ffffff;
+  font-size: 40px;
+} */
+
+#btn--play {
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+}
+
+.btn--dificulty {
+  width: auto;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 50%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal,
+.close-game {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* //testeeeee */
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+body {
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-palette-values --Grays {
+  font-family: Rocher;
+  base-palette: 9;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.grays {
+  font-palette: --Grays;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+.mint {
+  font-palette: --Mint;
+}

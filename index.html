@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cat Game</title>
+  
+  </head>
+ 
+
+  <body>
+    <div class="container">
+
+      <div class="div-title">
+      <h1 class="title" style="border: solid blue;">Jogo do Gato</h1>
+
+    </div>
+
+    <div> 
+      <p>Dificulty:</p> 
+
+      <button class="btn btn--dificulty"> Easy</button> 
+      <button class="btn btn--dificulty"> Normal</button> 
+      <button class="btn btn--dificulty"> Hard</button>
+
+
+    </div>
+   
+    <div class="div-btn--rules">
+    <button  class="btn" id="btn--rules">Clique aqui pra jogar</button>
+  </div>
+
+    <div class="modal hidden" id="modal--rules">
+      <button class="close-modal">&times;</button>
+      <h1 class="h1-rules">REGRAS:</h1>
+      <!-- <img src="cat-1.jpg" alt="inicial cat" class="cat--pic" /> -->
+      <p class="p-rules">
+        ATENÇÃO!!! Este jogo só tem uma única regra crucial: <hr>  1 - Não olhe pro
+        gato!
+      </p>
+      <button class="btn" id="btn--play">PLAY</button>
+    </div>
+
+    <div class="modal hidden" id="modal--game">
+      <button class="close-game" style="color: blue">&times;</button>
+      <h1 class="hidden" id="youLost">PERDEU!</h1>
+      <img src="cat-1.jpg" alt="inicial cat" class="cat--pic" />
+      <!-- <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p> -->
+      <P id="score">score: </P>
+    </div>
+
+    <div class="overlay"></div>
+
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
