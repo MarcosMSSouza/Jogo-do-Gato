@@ -5,55 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Cat Game</title>
-  
   </head>
- 
 
   <body>
     <div class="container">
-
+      <!-- ------------------------------GAME NAME------------------------------- -->
       <div class="div-title">
-      <h1 class="title" style="border: solid blue;">Jogo do Gato</h1>
+        <h1 class="title">
+          Jogo do <br />
+          <a style="font-size: 150px">Gato</a>
+        </h1>
+      </div>
+      <!-- ----------------------SOCIAL MEDIA BUTTONS------------------------------- -->
+      <div id="social-test">
+        <ul class="social">
+          <li
+            type="button"
+            value="button name"
+            onclick="window.open('https://www.instagram.com/macielssouza2022/')"
+          >
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </li>
 
+          <li
+            type="button"
+            value="button name"
+            onclick="window.open('https://github.com/MarcosMSSouza')"
+          >
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+
+      <!------------------------- DIFFICULTY BUTTONS------------------------------>
+      <div class="divdifficulty">
+        <p id="difftext">Dificuldade:</p>
+
+        <div class="main-buttons">
+          <button class="btn btn--difficulty" id="easy">Easy</button>
+          <button class="btn btn--difficulty" id="normal">Normal</button>
+          <button class="btn btn--difficulty" id="hard">Hard</button>
+          <button class="btn btn--difficulty" id="nightmare">Nightmare</button>
+        </div>
+        <h1 class="highscore">HIGH SCORE: 0.00</h1>
+      </div>
+      <!-- --------------------RULES BUTTON----------------------- -->
+      <div class="button" id="btn--rules">
+        <a href="#">Show Rules</a>
+      </div>
     </div>
-
-    <div> 
-      <p>Dificulty:</p> 
-
-      <button class="btn btn--dificulty"> Easy</button> 
-      <button class="btn btn--dificulty"> Normal</button> 
-      <button class="btn btn--dificulty"> Hard</button>
-
-
-    </div>
-   
-    <div class="div-btn--rules">
-    <button  class="btn" id="btn--rules">Clique aqui pra jogar</button>
-  </div>
-
+    <!----------------------------------RULES MODAL----------------------------->
     <div class="modal hidden" id="modal--rules">
       <button class="close-modal">&times;</button>
+      <button class="cover1">&times;</button>
       <h1 class="h1-rules">REGRAS:</h1>
-      <!-- <img src="cat-1.jpg" alt="inicial cat" class="cat--pic" /> -->
-      <p class="p-rules">
-        ATENÇÃO!!! Este jogo só tem uma única regra crucial: <hr>  1 - Não olhe pro
-        gato!
-      </p>
-      <button class="btn" id="btn--play">PLAY</button>
-    </div>
 
+      <div class="h2-rules">
+        <h2 class="h2-p">ATENÇÃO !</h2>
+
+        <p style="padding: 30px">Este jogo só tem uma única regra crucial :</p>
+        <p style="padding-top: 0px">🐱 NÃO olhe pro gato ! ! !</p>
+      </div>
+
+      <div class="button" id="btn--play">
+        <a href="#">PLAY</a>
+      </div>
+    </div>
+    <!----------------------------------GAME MODAL------------------------------>
     <div class="modal hidden" id="modal--game">
-      <button class="close-game" style="color: blue">&times;</button>
+      <button class="cover2">&times;</button>
+      <button class="close-game">&times;</button>
       <h1 class="hidden" id="youLost">PERDEU!</h1>
-      <img src="cat-1.jpg" alt="inicial cat" class="cat--pic" />
-      <!-- <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p> -->
-      <P id="score">score: </P>
-    </div>
+      <img src="img/cat-1.jpg" alt="inicial cat" class="cat--pic" />
 
+      <div id="displayScore">Score</div>
+    </div>
+    <div class="cat-overlay hidden"></div>
     <div class="overlay"></div>
 
-  </div>
     <script src="script.js"></script>
   </body>
 </html>

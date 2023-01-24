@@ -10,100 +10,98 @@
 
 .div-title {
   padding-bottom: 0%;
+  text-shadow: 12px 14px 10px rgba(13, 13, 14, 0.6);
 }
+
 .title {
   font-size: 100px;
   color: rgb(216, 240, 7);
+  line-height: 1.2em;
+  position: absolute;
+  margin-left: 7rem;
 }
 
 .container {
-  width: 80%;
-  max-width: 650px;
-  height: 70vh;
+  max-width: 670px;
+  height: 80vh;
   background-color: #ffffff;
   border-radius: 20px;
-  border: solid blue;
-
-  margin: auto;
-  margin-top: 5%;
-
+  background-image: url('img/catart-3.jpg');
+  padding: 1rem;
+  margin-top: 1%;
   box-shadow: 10px 9px 24px 2px rgba(243, 235, 235, 0.76);
   -webkit-box-shadow: 10px 9px 24px 2px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: 10px 9px 24px 2px rgba(236, 227, 227, 0.76);
 }
 
-.modal--rules {
-  border: solid blue;
-}
 .h1-rules {
-  padding: 1rem 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  display: inline-block;
-  width: 30rem;
-  margin: 0 1rem;
-  font-size: 50px;
-  /* border-top: 0.2rem solid black; */
-  /* border: solid; */
+  top: 3%;
+  width: 72.5%;
+  font-size: 90px;
+}
+
+.h2-rules {
+  border: solid 15px rgb(105, 24, 105);
+  height: 70%;
+  margin-top: 10%;
+  font-size: 40px;
+}
+
+.h2-p {
+  font-size: 55px;
+  margin-top: 4%;
 }
 
 body {
   background-color: rgb(105, 24, 105);
 }
 
+.main-buttons {
+  margin-top: 0px;
+  padding: 0%;
+}
+
 .btn {
-  width: 70%;
+  width: 60%;
   height: 50px;
-  border: none;
   background-color: rgb(105, 24, 105);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-bottom: 10px;
   cursor: pointer;
   color: #ffffff;
+  font-size: 36px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all300ms ease;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  box-shadow: rgba(234, 235, 228, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.highscore {
+  margin-bottom: -40px;
   font-size: 40px;
+  border-top: 1px solid black;
 }
 
-.div-btn--rules {
-  position: relative;
-  border: solid crimson;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
-  justify-content: flex-end;
-  align-items: center;
-  align-content: flex-end;
 
-  bottom: -4em;
-}
-
-/* #btn--rules {
-  color: #ffffff;
-  font-size: 40px;
-} */
-
-#btn--play {
-  font-size: 30px;
-  margin-bottom: 10px;
-  padding-bottom: 50px;
-}
-
-.btn--dificulty {
-  width: auto;
-}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 35%;
-  height: 50%;
-
+  border-radius: 20px;
   background-color: white;
   padding: 6rem;
-  border-radius: 5px;
+  width: 70%;
+  max-width: 500px;
+  height: 60vh;
+  background-color: #ffffff;
+  margin-top: 0%;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
@@ -119,19 +117,46 @@ body {
   z-index: 5;
 }
 
-.close-modal,
-.close-game {
+.cat-overlay {
   position: absolute;
-  top: 1.2rem;
-  right: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: white;
+  padding: 6rem;
+  width: 350px;
+  max-width: 500px;
+  height: 55vh;
+  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(40px);
+  z-index: 10;
+}
+
+.cover2,
+.cover1 {
+  position: absolute;
+  left: 1rem;
+  top: 0rem;
   font-size: 5rem;
-  color: #333;
+  color: #eeb928;
   cursor: pointer;
   border: none;
   background: none;
 }
 
-/* //testeeeee */
+.close-modal,
+.close-game {
+  position: absolute;
+  right: 1rem;
+  top: 0rem;
+  font-size: 5rem;
+  color: rgb(105, 24, 105);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
 
 @font-face {
   font-family: 'Rocher';
@@ -175,3 +200,150 @@ body {
 .mint {
   font-palette: --Mint;
 }
+
+
+
+.divdifficulty {
+  display: grid;
+  height: 32%;
+  align-items: flex-start;
+  font-size: 55px;
+  margin-top: 7rem;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 35vh;
+  justify-content: space-evenly;
+  border: solid 7px rgb(105, 24, 105);
+  background-color: #eeb928;
+  box-shadow: 10px 9px 24px 2px rgba(243, 235, 235, 0.76);
+  -webkit-box-shadow: 10px 9px 24px 2px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 10px 9px 24px 2px rgba(236, 227, 227, 0.76);
+  
+}
+
+#difftext {
+  margin-top: 8%;
+}
+
+.btn--difficulty {
+  width: auto;
+}
+
+.button {
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  margin: 10px;
+  padding: 15px 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #eeb928;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 16%;
+}
+
+
+#btn--rules {
+  border: solid rgb(105, 24, 105);
+  margin: 0;
+  bottom: -60px;
+  width: 80%;
+  right: -50px;
+  margin-bottom: 0rem;
+  font-size: 0px;
+}
+
+#btn--play {
+  margin: 0;
+  bottom: -30px;
+  width: 100%;
+  right: 18px;
+  border: solid rgb(105, 24, 105);
+  font-size: 0px;
+}
+
+.button a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 53px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 10px 15px;
+}
+
+.button:active {
+  background-color: #acc944;
+  box-shadow: 0 5px rgb(83, 27, 67);
+  transform: translateY(4px);
+}
+
+.btn:active {
+  background-color: rgb(83, 27, 67);
+  box-shadow: 0 5px rgb(83, 27, 67);
+  transform: translateY(4px);
+}
+
+.button:hover {
+  background-color: #f8d063;
+}
+
+#youLost {
+  position: absolute;
+  width: 30.5rem;
+  font-size: 90px;
+  justify-items: center;
+  top: 8%;
+}
+
+.cat--pic {
+  height: 400px;
+  max-width: 490px;
+  margin-top: 17%;
+  border: solid 7px rgb(83, 27, 67);
+}
+
+#displayScore {
+  align-items: baseline;
+  font-size: 60px;
+  position: relative;
+  bottom: -4%;
+  border-bottom: 1px solid black;
+}
+
+#social-test {
+  left: 0%;
+  top: 0px;
+  margin-left: 94%;
+  font-size: 40px;
+}
+
+#social-test .social {
+  padding-left: 0px;
+}
+#social-test li {
+  color: rgb(253, 246, 252);
+  list-style-type: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  padding: 1%;
+  border: 4px solid rgb(83, 27, 67);
+  background-color: #20201f;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: ease 0.3s;
+}
+#social-test li:hover {
+  color: #eeb928;
+}
+
