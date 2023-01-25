@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: inherit;
 }
+.zoom
+{
+    zoom: 80%;
+}
 
 .hidden {
   display: none;
