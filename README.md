@@ -1,5 +1,7 @@
 # Jogo-do-Gato
 
-Build 1.0.
+Build 3.0.
 
-Only the barebones working, basic HTML elements plus some CSS. Already some JS working, like the modals and buttons. First try on the logic part, but still not getting the Score system to work with the 'visualizing' conditions of the game. 
+- Lots of improvements to the interface, and some minor tweaking to the script.
+
+The 'logical' aspect of this project wasn't that hard, but I've learned a lot of CSS and Html in order to build something so simple like this. I've got some beatings, but the knowledge learned will stay!
