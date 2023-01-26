@@ -14,34 +14,34 @@
   }
 
   .h1-rules{
-    font-size: 3.5rem;
-    top: 5%;
+    font-size: 3.1rem;
+    top: 7%;
   }
 
-  #estejogo {
+  /* #estejogo {
     padding: 1px;
     padding-top: 4%;
     font-size: 1.8rem;
-  }
-  
+  } */
+/*   
   #naoolhe {
     font-size: 34px;
     padding: 5%;
     padding-top: 1%;
     margin-left: -8%;
     margin-right: -8%;
-  }
+  } */
 
   .cat-overlay {
-    width: 19.5vh;
+    width: 12vh;
     height: 36vh;
-    top: 57%;
+    top: 55%;
 }
 
 .cat--pic {
     height: 50%;
-    max-width: 18rem;
-    min-width: 18rem;
+    max-width: 16rem;
+    min-width: 16rem;
     margin-top: 40%;
     border: solid 7px rgb(83, 27, 67);
   }
