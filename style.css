@@ -13,14 +13,14 @@
 }
 
 .title {
-  font-size: 9vh;
+  font-size: 8.5vh;
   color: rgb(216, 240, 7);
   line-height: 1.2em;
   text-shadow: 12px 14px 14px rgba(13, 13, 14, 0.6);
 }
 
 .title-2 {
-  font-size: 16vh;
+  font-size: 15vh;
   text-shadow: 12px 14px 20px rgba(13, 13, 14, 0.6);
 }
 .container {
@@ -67,7 +67,7 @@ body {
 
 .highscore {
   margin-bottom: -5em;
-  font-size: 3.9vh;
+  font-size: 3.7vh;
   border-top: 1px solid black;
 }
 
@@ -241,7 +241,7 @@ body {
 #difftext {
   margin-top: -8%;
   margin-bottom: 4%;
-  font-size: 6vh;
+  font-size: 5vh;
 }
 
 .btn--difficulty {
