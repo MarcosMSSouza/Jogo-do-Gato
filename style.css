@@ -21,7 +21,7 @@
 
 .title-2 {
   font-size: 14vh;
-  text-shadow: 12px 14px 20px rgba(13, 13, 14, 0.6);
+/*   text-shadow: 12px 14px 20px rgba(13, 13, 14, 0.6); */
 }
 .container {
   width: 45vh;
@@ -213,7 +213,7 @@ body {
 }
 
 .divdifficulty {
-  margin-top: 8%;
+  margin-top: 11%;
   height: 28%;
   font-size: 50%;
   padding-top: 25%;
