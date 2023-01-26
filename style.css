@@ -145,14 +145,14 @@ body {
 
 .cat-overlay {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   background-color: white;
   padding: 7rem;
-  width: 16vh;
-  height: 35vh;
+  width: 18vh;
+  height: 37vh;
   background-color: #ffffff;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(40px);
@@ -214,7 +214,7 @@ body {
 }
 
 .divdifficulty {
-  margin-top: 11%;
+  margin-top: 14%;
   height: 28%;
   font-size: 50%;
   padding-top: 25%;
