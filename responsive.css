@@ -32,4 +32,8 @@
     color: rgb(216, 240, 7);
     line-height: 1.1em;
   }
+  
+  .divdifficulty {
+    margin-top: 13%;
+  }
 }
