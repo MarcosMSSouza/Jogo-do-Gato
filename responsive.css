@@ -12,13 +12,13 @@
     margin-left: 93%;
     font-size: 4vh;
   }
-  
-/*   .cat-overlay {
-    width: 8vh;
-    height: 30vh;
-    top: 54%;
+
+  .cat-overlay {
+    top: 52%;
+    width: 15rem;
+    height: 23rem;
   }
- */
+
   .cat--pic {
     height: 40%;
     max-width: 12rem;
@@ -27,10 +27,9 @@
     border: solid 7px rgb(83, 27, 67);
   }
 
-.title {
-  font-size: 8vh;
-  color: rgb(216, 240, 7);
-  line-height: 1.1em;
-}
-
+  .title {
+    font-size: 8vh;
+    color: rgb(216, 240, 7);
+    line-height: 1.1em;
+  }
 }
