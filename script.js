@@ -163,4 +163,3 @@ function changeCatPic() {
   console.log(catNumber);
 }
 
-changeCatPic();
