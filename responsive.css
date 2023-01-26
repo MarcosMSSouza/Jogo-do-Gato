@@ -1,51 +1,51 @@
 @media screen and (max-width: 400px) {
   .container {
-    max-width: 52vh;
+    max-width: 43vh;
   }
 
-  .btn{
+  .btn {
     font-size: 1rem;
-    padding: 3%;
+    padding: 2%;
   }
   #social-test {
     margin-top: -46%;
     margin-left: 93%;
     font-size: 4vh;
   }
+/* 
+  .h1-rules {
+    font-size: 3.1rem;
+    top: 7%;
+  } */
 
-  .h1-rules{
-    font-size: 3.5rem;
-    top: 5%;
-  }
-
-  #estejogo {
+  /* #estejogo {
     padding: 1px;
     padding-top: 4%;
     font-size: 1.8rem;
-  }
-  
+  } */
+  /*   
   #naoolhe {
     font-size: 34px;
     padding: 5%;
     padding-top: 1%;
     margin-left: -8%;
     margin-right: -8%;
-  }
+  } */
 
   .cat-overlay {
-    width: 19.5vh;
-    height: 36vh;
-    top: 57%;
-}
-
-.cat--pic {
-    height: 50%;
-    max-width: 18rem;
-    min-width: 18rem;
-    margin-top: 40%;
-    border: solid 7px rgb(83, 27, 67);
+    width: 6vh;
+    height: 30vh;
+    top: 54%;
   }
 
+  .cat--pic {
+    height: 40%;
+    max-width: 12rem;
+    min-width: 12rem;
+    margin-top: 20%;
+    border: solid 7px rgb(83, 27, 67);
+  }
+/* 
   .fields__textboxs > input {
     height: 60px;
   }
@@ -53,4 +53,12 @@
   .fields__recovery {
     margin-bottom: 20px;
   }
+} */
+
+.title {
+  font-size: 8vh;
+  color: rgb(216, 240, 7);
+  line-height: 1.1em;
+}
+
 }
