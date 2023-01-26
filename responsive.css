@@ -1,6 +1,6 @@
 @media screen and (max-width: 400px) {
   .container {
-    max-width: 45vh;
+    max-width: 43vh;
   }
 
   .btn{
@@ -34,8 +34,8 @@
 
   .cat-overlay {
     width: 12vh;
-    height: 36vh;
-    top: 55%;
+    height: 38vh;
+    top: 57%;
 }
 
 .cat--pic {
