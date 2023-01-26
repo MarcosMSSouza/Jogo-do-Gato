@@ -14,15 +14,16 @@
 }
 
 .title {
-  font-size: 80px;
+  font-size: 9.5vh;
   color: rgb(216, 240, 7);
   line-height: 1.1em;
-  position: absolute;
-  margin-left: 3.4rem;
 }
 
+.title-2 {
+  font-size: 17vh;
+}
 .container {
-  max-width: 450px;
+  width: 60vh;
   height: 80vh;
   background-color: #ffffff;
   border-radius: 20px;
@@ -34,53 +35,22 @@
   -moz-box-shadow: 10px 9px 24px 2px rgba(236, 227, 227, 0.76);
 }
 
-.h1-rules {
-  position: absolute;
-  top: 3%;
-  font-size: 77px;
-}
-
-.h2-rules {
-  max-width: 300px;
-  min-width: 320px;
-  border: solid 15px rgb(105, 24, 105);
-  height: 70%;
-  margin-top: 10%;
-  font-size: 35px;
-}
-
-.h2-p {
-  font-size: 45px;
-  margin-top: 6%;
-}
-
-#estejogo {
-  padding: 0px;
-  padding-top: 15px;
-  font-size: 32px;
-}
-
-#naoolhe {
-  font-size: 35px;
-  padding: 0px;
-  padding-top: 20px;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
 body {
   background-color: rgb(105, 24, 105);
 }
 
 .main-buttons {
-  margin-top: 0px;
+  margin-top: 0%;
+  margin-left: -16%;
+  margin-right: -16%;
 }
 
 .btn {
-  height: 50px;
-  font-size: 25px;
-  padding: 4px;
-  margin-bottom: 5px;
+  height: 22%;
+  font-size: 1.6rem;
+  padding: 2%;
+  margin-bottom: 5%;
+
   cursor: pointer;
   color: #ffffff;
   background-color: rgb(105, 24, 105);
@@ -95,48 +65,81 @@ body {
 }
 
 .highscore {
-  margin-bottom: -20px;
-  font-size: 30px;
+  margin-bottom: -5em;
+  font-size: 3.9vh;
   border-top: 1px solid black;
 }
 
 #modal--rules {
   position: absolute;
-  max-width: 350px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
-  background-color: white;
-  padding: 5rem;
-  padding-left: 85px;
-  padding-right: 85px;
-  /* width: 70%; */
-  height: 65vh;
+  width: 52vh;
+  height: 81vh;
+  margin-top: 1%;
+  padding: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #ffffff;
-  margin-top: 0%;
+  background-color: white;
+  border-radius: 20px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+
+.h1-rules {
+  position: absolute;
+  top: 3%;
+  font-size: 4.5rem;
+  right: 0%;
+  left: 0%;
+}
+
+.h2-rules {
+  min-width: 80%;
+  margin-top: 27%;
+  margin-left: -2px;
+  margin: right -15px;
+  border: solid 15px rgb(105, 24, 105);
+  height: 54%;
+  margin-top: 25%;
+  font-size: 5vh;
+}
+
+.h2-p {
+  font-size: 6vh;
+  margin-top: 6%;
+}
+
+#estejogo {
+  padding: 1px;
+  padding-top: 8%;
+  font-size: 2rem;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#naoolhe {
+  font-size: 35px;
+  padding: 5%;
+  padding-top: 8%;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 #modal--game {
   position: absolute;
-  max-width: 350px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 52vh;
+  height: 81vh;
+  margin-top: 1%;
+  padding: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #ffffff;
   background-color: white;
-  padding: 5rem;
-  padding-left: 85px;
-  padding-right: 85px;
-  /* width: 70%; */
-  height: 65vh;
-
   border-radius: 20px;
-  margin-top: 0%;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -150,23 +153,22 @@ body {
 
 .cat-overlay {
   position: absolute;
-  top: 50%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   background-color: white;
   padding: 7rem;
-  width: 180px;
-  max-width: 400px;
-  height: 55vh;
+  width: 24vh;
+  height: 38vh;
   background-color: #ffffff;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(40px);
   z-index: 10;
 }
 
-.cover,
-.cover-cat {
+.cover1,
+.cover2 {
   position: absolute;
   left: 1rem;
   top: 0rem;
@@ -175,6 +177,7 @@ body {
   cursor: pointer;
   border: none;
   background: none;
+  z-index: 10;
 }
 
 .close-modal,
@@ -187,37 +190,12 @@ body {
   cursor: pointer;
   border: none;
   background: none;
+  z-index: 10;
 }
 
 @font-face {
   font-family: 'Rocher';
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
-}
-
-body {
-  font-family: 'Rocher';
-  text-align: center;
-  font-size: 40px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@font-palette-values --Grays {
-  font-family: Rocher;
-  base-palette: 9;
-}
-
-@font-palette-values --Purples {
-  font-family: Rocher;
-  base-palette: 6;
-}
-
-@font-palette-values --Mint {
-  font-family: Rocher;
-  base-palette: 7;
 }
 
 .grays {
@@ -233,17 +211,14 @@ body {
 }
 
 .divdifficulty {
-  display: grid;
-  /* height: 25%; */
-  align-items: flex-start;
-  font-size: 55px;
-  margin-top: 4rem;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-left: 2px;
-  margin-right: 2px;
-  height: 38vh;
-  justify-content: space-evenly;
+  height: 28%;
+  font-size: 55%;
+  padding-top: 25%;
+  margin-top: 16%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
   border: solid 7px rgb(105, 24, 105);
   background-color: #eeb928;
 
@@ -253,9 +228,9 @@ body {
 }
 
 #difftext {
-  margin-top: 15%;
-  margin-bottom: -9%;
-  font-size: 40px;
+  margin-top: -8%;
+  margin-bottom: 4%;
+  font-size: 6vh;
 }
 
 .btn--difficulty {
@@ -263,12 +238,9 @@ body {
 }
 
 .button {
-  position: relative;
   font-family: Helvetica, sans-serif;
-  margin: 10px;
-  padding: 15px 15px;
+  padding: 10px 10px;
   font-size: 24px;
-  text-align: center;
   cursor: pointer;
   outline: none;
   color: #fff;
@@ -276,27 +248,20 @@ body {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px rgb(105, 24, 105);
-  margin: 16%;
 }
 
 #btn--rules {
+  margin-top: 8%;
+  margin-right: 0rem;
+  margin-left: 0rem;
   border: solid rgb(105, 24, 105);
-  margin: 0;
-  bottom: -30px;
-  width: 85%;
-  margin-right: 15px;
-  margin-left: 17px;
-  margin-bottom: 10rem;
 }
 
 #btn--play {
-  margin: 0;
-  bottom: -30px;
-  width: 100%;
-  right: 18px;
+  margin-top: 5%;
+  margin-right: 1rem;
+  margin-left: 1rem;
   border: solid rgb(105, 24, 105);
-  font-size: 0px;
-  padding: 13px;
 }
 
 .button a {
@@ -329,16 +294,17 @@ body {
 
 #youLost {
   position: absolute;
-  font-size: 75px;
-  top: 6%;
-  left: 16%;
+  font-size: 10vh;
+  top: 10%;
+  margin-left: 1rem;
+  margin-right: 50%;
 }
 
 .cat--pic {
-  height: 340px;
-  max-width: 330px;
-  min-width: 340px;
-  margin-top: 17%;
+  height: 50%;
+  max-width: 22rem;
+  min-width: 22rem;
+  margin-top: 40%;
   border: solid 7px rgb(83, 27, 67);
 }
 
@@ -349,23 +315,22 @@ body {
 }
 
 #social-test {
-  left: 0%;
-  top: 0px;
-  margin-left: 94%;
-  font-size: 30px;
+  margin-top: -40%;
+  margin-left: 93%;
+  font-size: 4vh;
 }
 
 #social-test .social {
-  padding-left: 0px;
+  padding-left: 0%;
 }
 
 #social-test li {
   color: rgb(253, 246, 252);
   list-style-type: none;
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 36px;
+  width: 4vh;
+  height: 4vh;
+  line-height: 30px;
   padding: 1%;
   border: 4px solid rgb(83, 27, 67);
   background-color: #20201f;
@@ -376,4 +341,30 @@ body {
 
 #social-test li:hover {
   color: #eeb928;
+}
+
+body {
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-palette-values --Grays {
+  font-family: Rocher;
+  base-palette: 9;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
 }

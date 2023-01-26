@@ -3,8 +3,8 @@
 // ---------------------DOM Elements----------------------------
 const btnRules = document.getElementById('btn--rules');
 const btnPlay = document.getElementById('btn--play');
-const btnCoverCat = document.querySelector('.cover-cat');
-const btnCover2 = document.querySelector('.cover');
+const btnCover1 = document.querySelector('.cover1');
+const btnCover2 = document.querySelector('.cover2');
 const btnCloseMOdal = document
   .querySelector('.close-modal')
   .addEventListener('click', closeModal);
@@ -68,7 +68,7 @@ var interval;
 let highscore = 0;
 overlayEl.classList.add('hidden');
 
-btnCoverCat.addEventListener('click', function () {
+btnCover1.addEventListener('click', function () {
   catOverlay.classList.toggle('hidden');
   looking = !looking;
   console.log(looking);
@@ -162,3 +162,5 @@ function changeCatPic() {
   catPic.src = `img/cat-${catNumber}.jpg`;
   console.log(catNumber);
 }
+
+changeCatPic();

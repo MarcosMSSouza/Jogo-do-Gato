@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,7 +18,7 @@
       <div class="div-title">
         <h1 class="title">
           Jogo do <br />
-          <a style="font-size: 130px">Gato</a>
+          <a class="title-2">Gato</a>
         </h1>
       </div>
       <!-- ---------------SOCIAL MEDIA BUTTONS------------------ -->
@@ -62,7 +63,7 @@
     <!-- --------------------------MODAL RULES------------------------- -->
     <div class="modal hidden" id="modal--rules">
       <button class="close-modal">&times;</button>
-      <button class="cover-cat">&times;</button>
+      <button class="cover1">&times;</button>
       <h1 class="h1-rules">REGRAS:</h1>
 
       <div class="h2-rules">
@@ -79,12 +80,12 @@
 
     <!---------------------------------MODAL GAME-------------------------->
     <div class="modal hidden" id="modal--game">
-      <button class="cover">&times;</button>
+      <button class="cover2">&times;</button>
       <button class="close-game">&times;</button>
       <h1 class="hidden" id="youLost">PERDEU!</h1>
       <img src="img/cat-1.jpg" alt="inicial cat" class="cat--pic" />
 
-      <div id="displayScore">Score: 10.000</div>
+      <div id="displayScore">Score:</div>
     </div>
     <div class="cat-overlay hidden"></div>
     <div class="overlay"></div>
