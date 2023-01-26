@@ -12,28 +12,9 @@
     margin-left: 93%;
     font-size: 4vh;
   }
-/* 
-  .h1-rules {
-    font-size: 3.1rem;
-    top: 7%;
-  } */
-
-  /* #estejogo {
-    padding: 1px;
-    padding-top: 4%;
-    font-size: 1.8rem;
-  } */
-  /*   
-  #naoolhe {
-    font-size: 34px;
-    padding: 5%;
-    padding-top: 1%;
-    margin-left: -8%;
-    margin-right: -8%;
-  } */
-
+  
   .cat-overlay {
-    width: 6vh;
+    width: 8vh;
     height: 30vh;
     top: 54%;
   }
@@ -45,15 +26,6 @@
     margin-top: 20%;
     border: solid 7px rgb(83, 27, 67);
   }
-/* 
-  .fields__textboxs > input {
-    height: 60px;
-  }
-
-  .fields__recovery {
-    margin-bottom: 20px;
-  }
-} */
 
 .title {
   font-size: 8vh;
