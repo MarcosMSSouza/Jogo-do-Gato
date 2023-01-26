@@ -13,24 +13,24 @@
 }
 
 .title {
-  font-size: 9vh;
+  font-size: 8vh;
   color: rgb(216, 240, 7);
   line-height: 1.2em;
   text-shadow: 12px 14px 14px rgba(13, 13, 14, 0.6);
 }
 
 .title-2 {
-  font-size: 14.5vh;
+  font-size: 14vh;
   text-shadow: 12px 14px 20px rgba(13, 13, 14, 0.6);
 }
 .container {
-  width: 52vh;
-  height: 75vh;
+  width: 45vh;
+  height: 70vh;
   background-color: #ffffff;
   border-radius: 20px;
   background-image: url('img/catart-3.jpg');
   padding: 1rem;
-  margin-top: -2%;
+  margin-top: -10%;
   box-shadow: 10px 9px 24px 2px rgba(243, 235, 235, 0.76);
   -webkit-box-shadow: 10px 9px 24px 2px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: 10px 9px 24px 2px rgba(236, 227, 227, 0.76);
@@ -68,8 +68,9 @@ body {
 #modal--rules {
   position: absolute;
   width: 43vh;
-  height: 75vh;
-  margin-top: -2%;
+  /* max-width: 35vh; */
+  height: 70vh;
+  margin-top: -10%;
   padding: 1rem;
   padding-left: 5%;
   padding-right: 5%;
@@ -90,8 +91,8 @@ body {
 
 .h2-rules {
   min-width: 80%;
-  margin-left: 15px;
-  margin: 15px;
+  /* margin-left: 15px; */
+  margin: 13px;
   border: solid 15px rgb(105, 24, 105);
   height: 50%;
   margin-top: 25%;
@@ -120,8 +121,8 @@ body {
 #modal--game {
   position: absolute;
   width: 43vh;
-  height: 75vh;
-  margin-top: -2%;
+  height: 70vh;
+  margin-top: -10%;
   padding: 1rem;
   padding-left: 5%;
   padding-right: 5%;
@@ -145,15 +146,13 @@ body {
 
 .cat-overlay {
   position: absolute;
-  top: 53%;
+  top: 46%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
+  width: 19rem;
+  height: 28rem;
   background-color: white;
-  padding: 7rem;
-  width: 18vh;
-  height: 37vh;
-  background-color: #ffffff;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(40px);
   z-index: 10;
@@ -214,7 +213,7 @@ body {
 }
 
 .divdifficulty {
-  margin-top: 14%;
+  margin-top: 8%;
   height: 28%;
   font-size: 50%;
   padding-top: 25%;
@@ -255,7 +254,7 @@ body {
 
 .button a {
   color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Rocher';
   font-weight: bold;
   font-size: 53px;
   text-align: center;
@@ -278,6 +277,7 @@ body {
   padding-bottom: 2%;
   margin-right: 1rem;
   margin-left: 1rem;
+  font-family: 'Rocher';
   /* font-size: 88%; */
   border: solid rgb(105, 24, 105);
 }
@@ -342,7 +342,7 @@ body {
   display: inline-block;
   width: 4vh;
   height: 4vh;
-  line-height: 30px;
+  line-height: 32px;
   padding: 1%;
   border: 4px solid rgb(83, 27, 67);
   background-color: #20201f;
