@@ -13,11 +13,11 @@
     font-size: 4vh;
   }
 
-/*   .cat-overlay {
-    top: 52%;
-    width: 15rem;
-    height: 23rem;
-  } */
+ .cat-overlay {
+    top: 45%;
+    width: 20rem;
+/*     height: 23rem; */
+  }
 
   .cat--pic {
     height: 40%;
