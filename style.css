@@ -25,7 +25,7 @@
 }
 .container {
   width: 52vh;
-  height: 80vh;
+  height: 75vh;
   background-color: #ffffff;
   border-radius: 20px;
   background-image: url('img/catart-3.jpg');
@@ -73,8 +73,8 @@ body {
 
 #modal--rules {
   position: absolute;
-  width: 43vh;
-  height: 81vh;
+  width: 42vh;
+  height: 75vh;
   margin-top: 1%;
   padding: 1rem;
   padding-left: 5%;
@@ -127,8 +127,8 @@ body {
 
 #modal--game {
   position: absolute;
-  width: 43vh;
-  height: 81vh;
+  width: 42vh;
+  height: 75vh;
   margin-top: 1%;
   padding: 1rem;
   padding-left: 5%;
