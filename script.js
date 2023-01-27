@@ -3,6 +3,12 @@
 // ---------------------DOM Elements----------------------------
 const btnRules = document.getElementById('btn--rules');
 const btnPlay = document.getElementById('btn--play');
+const btnBack = document
+  .getElementById('back')
+  .addEventListener('click', () => {
+    closeModal();
+    openRules();
+  });
 const btnCover1 = document.querySelector('.cover1');
 const btnCover2 = document.querySelector('.cover2');
 const btnCloseMOdal = document
@@ -23,26 +29,30 @@ let displayHighscore = document.querySelector('.highscore');
 const btnEasy = document
   .getElementById('easy')
   .addEventListener('click', function () {
+    ClickAudio.play();
     difficulty = 3000;
-    console.log(difficulty);
+    // console.log(difficulty);
   });
 const btnNormal = document
   .getElementById('normal')
   .addEventListener('click', function () {
+    ClickAudio.play();
     difficulty = 2000;
-    console.log(difficulty);
+    // console.log(difficulty);
   });
 const btnHard = document
   .getElementById('hard')
   .addEventListener('click', function () {
+    ClickAudio.play();
     difficulty = 1000;
-    console.log(difficulty);
+    // console.log(difficulty);
   });
 const btnNightmare = document
   .getElementById('nightmare')
   .addEventListener('click', function () {
+    ClickAudio.play();
     difficulty = 500;
-    console.log(difficulty);
+    // console.log(difficulty);
   });
 
 overlayEl.addEventListener('click', closeModal);
@@ -50,6 +60,7 @@ overlayEl.addEventListener('click', closeModal);
 //---------------------RULES and PLAY Buttons-------------------------------------------------
 btnRules.addEventListener('click', openRules);
 btnPlay.addEventListener('click', function () {
+  ClickAudio.play();
   if (!playing) {
     playing = true;
     looking = true;
@@ -60,6 +71,8 @@ btnPlay.addEventListener('click', function () {
 //-----------------------------------INITIAL VARIABLES-----------------------------------
 let LostAudio = new Audio('sounds/perdeu.mp3');
 let VictoryAudio = new Audio('sounds/catvictory.mp3');
+let ClickAudio = new Audio('sounds/click.wav');
+
 let difficulty = 2000;
 let looking = true;
 let playing = false;
@@ -69,15 +82,17 @@ let highscore = 0;
 overlayEl.classList.add('hidden');
 
 btnCover1.addEventListener('click', function () {
+  ClickAudio.play();
   catOverlay.classList.toggle('hidden');
   looking = !looking;
-  console.log(looking);
+  // console.log(looking);
 });
 
 btnCover2.addEventListener('click', function () {
+  ClickAudio.play();
   catOverlay.classList.toggle('hidden');
   looking = !looking;
-  console.log(looking);
+  // console.log(looking);
   if (looking && playing && score < 9) {
     youLose();
   }
@@ -85,27 +100,29 @@ btnCover2.addEventListener('click', function () {
 
 //----------------------------------FUNCTIONS------------------------------------------
 function openRules() {
+  ClickAudio.play();
   modalRulesEl.classList.remove('hidden');
   overlayEl.classList.remove('hidden');
 }
 
 function closeModal() {
+  ClickAudio.play();
   looking = false;
   playing = false;
-  console.log('clicked');
   modalRulesEl.classList.add('hidden');
   modalGameEl.classList.add('hidden');
   overlayEl.classList.add('hidden');
   window.clearInterval(interval);
   catOverlay.classList.add('hidden');
   VictoryAudio.pause();
+  // console.log('clicked');
 }
 
 function playGame() {
   score = 0.0;
   YouLost.classList.add('hidden');
   YouLost.innerHTML = 'PERDEU!';
-  console.log(looking, playing);
+  // console.log(looking, playing);
   changeCatPic();
   if (!looking && playing) {
     modalGameEl.classList.remove('hidden');
@@ -152,7 +169,7 @@ function setTimer() {
           highscore = 9.0;
         }
       }
-      console.log(score);
+      // console.log(score);
     });
   }
 }
@@ -160,7 +177,5 @@ function setTimer() {
 function changeCatPic() {
   let catNumber = Math.trunc(Math.random() * 10 + 1);
   catPic.src = `img/cat-${catNumber}.jpg`;
-  console.log(catNumber);
+  // console.log(catNumber);
 }
-
-changeCatPic();
