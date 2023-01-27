@@ -13,10 +13,10 @@
     font-size: 4vh;
   }
 
-  .cat-overlay {
-    top: 50%;
+ .cat-overlay {
+    top: 57%;
     width: 20rem;
-    height: 23rem;
+/*     height: 23rem; */
   }
 
   .cat--pic {
