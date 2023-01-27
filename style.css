@@ -338,6 +338,7 @@ body {
   height: 4rem;
   margin-bottom: 10rem;
   size: 40%;
+  cursor: pointer;
 }
 #social-test {
   margin-top: -40%;
