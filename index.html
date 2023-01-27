@@ -15,13 +15,14 @@
 
   <body>
     <div class="container">
+      <!----------------------GAME TITLE-------------------------->
       <div class="div-title">
         <h1 class="title">
           Jogo do <br />
           <a class="title-2">Gato</a>
         </h1>
       </div>
-      <!-- ---------------SOCIAL MEDIA BUTTONS------------------ -->
+      <!-----------------SOCIAL MEDIA BUTTONS-------------------->
       <div id="social-test">
         <ul class="social">
           <li
@@ -50,9 +51,9 @@
           <button class="btn btn--difficulty" id="easy">Easy</button>
           <button class="btn btn--difficulty" id="normal">Normal</button>
           <button class="btn btn--difficulty" id="hard">Hard</button>
-          <button class="btn btn--difficulty" id="nightmare">Nightmare</button>
-          
+          <button class="btn btn--difficulty" id="nightmare">Nightmare</button>    
         </div>
+
         <h1 class="highscore">HIGH SCORE: 0.00</h1>
       </div>
 
@@ -65,12 +66,9 @@
     <div class="modal hidden" id="modal--rules">
       <button class="close-modal">&times;</button>
       <button class="cover1">&times;</button>
-      <!-- <h1 class="h1-rules">REGRAS:</h1> -->
 
       <div class="h2-rules">
         <h2 class="h2-p">Regras:</h2>
-
-        <!-- <p id="estejogo">Este jogo só tem uma única regra crucial :</p> -->
         <p id="naoolhe">1- NÃO olhe pro gato ! ! ! 🐱</p>
       </div>
 
@@ -83,15 +81,17 @@
     <div class="modal hidden" id="modal--game">
       <button class="cover2">&times;</button>
       <button class="close-game">&times;</button>
+
       <h1 class="hidden" id="youLost">PERDEU!</h1>
       <img src="img/cat-1.jpg" alt="inicial cat" class="cat--pic" />
 
       <div id="displayScore">Score:</div>
+
       <img id="back" src="img/arrow.png" />
     </div>
-    <div class="cat-overlay hidden">
-      <!-- <img id="hand" src="img/hand2.png" /> -->
-    </div>
+
+    <div class="cat-overlay hidden"></div>
+
     <div class="overlay"></div>
 
     <script src="script.js"></script>

@@ -45,7 +45,6 @@ body {
 #modal--rules {
   position: absolute;
   width: 43vh;
-  /* max-width: 35vh; */
   height: 70vh;
   margin-top: -2%;
   padding: 1rem;
@@ -68,7 +67,6 @@ body {
 
 .h2-rules {
   min-width: 80%;
-  /* margin-left: 15px; */
   margin: 13px;
   border: solid 15px rgb(105, 24, 105);
   height: 50%;
@@ -135,16 +133,6 @@ body {
   z-index: 10;
 }
 
-/* #hand{  
-   transform: translate(-50%, -50%);
-  position: absolute;
-  left: 55%;
-  top: 40%;
-  height: 55vh;
-  width: 22rem;
-  z-index: 10;
-}  */
-
 .cover1,
 .cover2 {
   position: absolute;
@@ -189,18 +177,10 @@ body {
 }
 
 .divdifficulty {
-  /* margin-top: 10%; */
   height: 28%;
-  /* font-size: 50%; */
   padding-top: 25%;
-  /* padding-right: 10%; */
-  /* padding-left: 10%; */
-  /* padding-bottom: 0%; */
-  /* margin-left: 0%; */
-  /* margin-right: 0%; */
   border: solid 7px rgb(105, 24, 105);
   background-color: #eeb928;
-
   box-shadow: 20px 9px 24px 2px rgba(243, 235, 235, 0.76);
   -webkit-box-shadow: 10px 9px 24px 2px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: 10px 9px 24px 2px rgba(236, 227, 227, 0.76);
@@ -216,7 +196,6 @@ body {
   margin-top: 0%;
   margin-left: -4%;
   margin-right: -4%;
-  /* display: flex; */
 }
 
 
@@ -226,8 +205,7 @@ body {
   font-size: 1.1rem;
   padding: 2%;
   margin: 0%;
-  margin-bottom: 3%;
-
+  margin-bottom: 7%;
   cursor: pointer;
   color: #ffffff;
   background-color: rgb(105, 24, 105);
@@ -260,8 +238,6 @@ body {
   padding: 10px 15px;
 }
 
-
-
 .btn:hover {
   box-shadow: rgba(234, 235, 228, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -281,7 +257,6 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
   font-family: 'Courier New', Courier, monospace;
-  /* font-size: 88%; */
   border: solid rgb(105, 24, 105);
 }
 
@@ -322,13 +297,11 @@ body {
   min-width: 16rem;
   margin-top: 20%;
   border: solid 7px rgb(83, 27, 67);
-  /* margin-bottom: 20px; */
   z-index: 15;
 }
 
 #displayScore {
   font-size: 6vh;
-  /* padding: 0; */
   border-bottom: 1px solid black;
 }
 
@@ -338,7 +311,9 @@ body {
   height: 4rem;
   margin-bottom: 10rem;
   size: 40%;
+  cursor: pointer;
 }
+
 #social-test {
   margin-top: -40%;
   margin-left: 93%;
