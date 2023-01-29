@@ -68,7 +68,7 @@ btnPlay.addEventListener('click', function () {
 });
 
 //----------------------------INITIAL VARIABLES------------------------------
-let LostAudio = new Audio('sounds/perdeu.mp3');
+let LostAudio = new Audio('sounds/cat.mp3');
 let VictoryAudio = new Audio('sounds/catvictory.mp3');
 let ClickAudio = new Audio('sounds/click.wav');
 
