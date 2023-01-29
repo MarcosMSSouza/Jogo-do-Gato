@@ -1,22 +1,23 @@
 @media screen and (max-width: 400px) {
   .container {
     max-width: 43vh;
+    max-height: 70vh;
   }
 
   .btn {
     font-size: 1rem;
     padding: 1.5%;
   }
-  #social-test {
+  /* #social-test {
     margin-top: -46%;
     margin-left: 93%;
     font-size: 4vh;
-  }
+  } */
 
-  .cat-overlay {
+  /* .cat-overlay {
     top: 57%;
     width: 20rem;
-  }
+  } */
 
   .cat--pic {
     height: 40%;
@@ -32,7 +33,7 @@
     line-height: 1.1em;
   }
 
-  .divdifficulty {
+  /* .divdifficulty {
     margin-top: 13%;
-}
+} */
 }
